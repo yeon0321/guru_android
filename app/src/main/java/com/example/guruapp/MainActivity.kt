@@ -1,11 +1,46 @@
 package com.example.guruapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 
-class MainActivity : AppCompatActivity() {
+open class MainActivity : AppCompatActivity() {
+
+    lateinit var preEx_body: Button
+    lateinit var preEx_upperbody: Button
+    lateinit var preEx_lowerbody: Button
+    lateinit var preEx_stretch: Button
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.prepare_ex)
+
+        preEx_body = findViewById(R.id.preEx_body)
+        preEx_upperbody = findViewById(R.id.preEx_upperbody)
+        preEx_lowerbody = findViewById(R.id.preEx_lowerbody)
+        preEx_stretch = findViewById(R.id.preEx_stretch)
+
+
+        preEx_body.setOnClickListener({
+            val intent = Intent(this, prepare_ex_detail::class.java)
+            startActivity(intent)
+        })
+
+        preEx_upperbody.setOnClickListener({
+            val intent2 = Intent(this, prepare_ex_detail::class.java)
+            startActivity(intent2)
+        })
     }
+
+
+
+
+
+
+
+
+
 }
