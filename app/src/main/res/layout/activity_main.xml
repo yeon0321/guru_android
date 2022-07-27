@@ -8,7 +8,7 @@
 
     <com.naver.maps.map.MapView
         android:id="@+id/Walkmap_view"
-        android:layout_width="410dp"
+        android:layout_width="0dp"
         android:layout_height="330dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -16,44 +16,102 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
-        android:layout_width="242dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginBottom="31dp"
-        android:hint="장소 검색"
-        app:layout_constraintBottom_toTopOf="@+id/Walkmap_view"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="57dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="31dp"
-        android:text="내 주변"
-        app:layout_constraintBottom_toTopOf="@+id/Walkmap_view"
+        android:layout_marginEnd="32dp"
+        android:text="검색"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textInputEditText"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginBottom="36dp"
-        android:text="근처 공원 목록"
-        android:textSize="60sp"
+    <LinearLayout
+        android:layout_width="416dp"
+        android:layout_height="127dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Walkmap_view" />
+        app:layout_constraintTop_toBottomOf="@+id/Walkmap_view">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="배꽃공원"
+                    android:textSize="20dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="위치 나오게 함" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="배꽃공원"
+                    android:textSize="20dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="위치 나오게 함" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="배꽃공원"
+                    android:textSize="20dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="위치 나오게 함" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="배꽃공원"
+                    android:textSize="20dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="위치 나오게 함" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="장소 입력받기 "
+        app:layout_constraintBottom_toTopOf="@+id/Walkmap_view"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="21dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
