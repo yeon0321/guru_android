@@ -14,7 +14,11 @@
         <entry key="..\:/android/guru_android/app/src/main/res/layout/Prepare.xml" value="0.17447916666666666" />
         <entry key="..\:/android/guru_android/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/android/guru_android/app/src/main/res/layout/ex_diary.xml" value="0.2" />
-        <entry key="..\:/android/guru_android/app/src/main/res/layout/prepare_ex.xml" value="0.2453125" />
+        <entry key="..\:/android/guru_android/app/src/main/res/layout/prepare_ex.xml" value="0.19827586206896552" />
+        <entry key="..\:/android/guru_android/app/src/main/res/layout/prepare_ex_body.xml" value="0.2453125" />
+        <entry key="..\:/android/guru_android/app/src/main/res/layout/prepare_ex_lowerbody.xml" value="0.2" />
+        <entry key="..\:/android/guru_android/app/src/main/res/layout/prepare_ex_stretching.xml" value="0.19270833333333334" />
+        <entry key="..\:/android/guru_android/app/src/main/res/layout/prepare_ex_upperbody.xml" value="0.2" />
       </map>
     </option>
   </component>
