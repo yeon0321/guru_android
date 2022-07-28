@@ -25,14 +25,26 @@ open class MainActivity : AppCompatActivity() {
 
 
         preEx_body.setOnClickListener({
-            val intent = Intent(this, prepare_ex_detail::class.java)
-            startActivity(intent)
+            val intent_body = Intent(this, prepare_ex_body::class.java)
+            startActivity(intent_body)
+        })
+
+
+        preEx_lowerbody.setOnClickListener({
+            val intent_lowerbody = Intent(this, prepare_ex_lowerbody::class.java)
+            startActivity(intent_lowerbody)
         })
 
         preEx_upperbody.setOnClickListener({
-            val intent2 = Intent(this, prepare_ex_detail::class.java)
-            startActivity(intent2)
+            val intent_upperbody = Intent(this, prepare_ex_upperbody::class.java)
+            startActivity(intent_upperbody)
         })
+
+        preEx_stretch.setOnClickListener({
+            val intent_stretch = Intent(this, prepare_ex_stretching::class.java)
+            startActivity(intent_stretch)
+        })
+
     }
 
 
