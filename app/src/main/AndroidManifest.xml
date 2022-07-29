@@ -36,7 +36,7 @@
         <activity android:name=".prepare_ex_lowerbody"/>
         <activity android:name=".prepare_ex_upperbody"/>
         <activity android:name=".prepare_ex_stretching"/>
-
+        <activity android:name=".ex_diary"/>
     </application>
 
 </manifest>
