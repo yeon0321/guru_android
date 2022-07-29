@@ -33,11 +33,8 @@ open class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         preEx_upperbody = findViewById(R.id.preEx_upperbody)
         preEx_lowerbody = findViewById(R.id.preEx_lowerbody)
         preEx_stretch = findViewById(R.id.preEx_stretch)
-        button = findViewById(R.id.button2)
 
 
-        val toolbar: Toolbar = findViewById(R.id.toolbar) // toolBar를 통해 App Bar 생성
-        setSupportActionBar(toolbar) // 툴바 적용
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true) // 드로어를 꺼낼 홈 버튼 활성화
         supportActionBar?.setHomeAsUpIndicator(R.drawable.navi_menu) // 홈버튼 이미지 변경
@@ -53,10 +50,6 @@ open class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
 
 
 
-        button.setOnClickListener({
-            val intent_diary = Intent(this, prepare_ex_body::class.java)
-            startActivity(intent_diary)
-        })
 
         preEx_body.setOnClickListener({
             val intent_body = Intent(this, prepare_ex_body::class.java)
